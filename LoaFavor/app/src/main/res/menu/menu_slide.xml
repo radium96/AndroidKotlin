@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item
+    android:id="@+id/world_item01"
+    android:title="아르테미스 / 트리시온"/>
+
+<item
+    android:id="@+id/world_item02"
+    android:title="유디아 / 루테란 서부"/>
+
+<item
+    android:id="@+id/world_item03"
+    android:title="루테란 동부"/>
+
+<item
+    android:id="@+id/world_item04"
+    android:title="토토이크"/>
+
+<item
+    android:id="@+id/world_item05"
+    android:title="애니츠"/>
+
+<item
+    android:id="@+id/world_item06"
+    android:title="아르데타인"/>
+
+<item
+    android:id="@+id/world_item07"
+    android:title="베른 북부"/>
+
+<item
+    android:id="@+id/world_item08"
+    android:title="슈샤이어"/>
+
+<item
+    android:id="@+id/world_item09"
+    android:title="로헨델"/>
+
+<item
+    android:id="@+id/world_item10"
+    android:title="욘"/>
+
+<item
+    android:id="@+id/world_item11"
+    android:title="페이튼"/>
+
+<item
+    android:id="@+id/world_item12"
+    android:title="파푸니카 니아친구"/>
+
+<item
+    android:id="@+id/world_item13"
+    android:title="파푸니카 서브캐릭터"/>
+
+<item
+    android:id="@+id/world_item14"
+    android:title="베른 남부"/>
+
+<item
+    android:id="@+id/world_item15"
+    android:title="기에나의 바다"/>
+
+<item
+    android:id="@+id/world_item16"
+    android:title="프로키온의 바다"/>
+
+<item
+    android:id="@+id/collection_item01"
+    android:title="섬의 마음"/>
+
+<item
+    android:id="@+id/collection_item02"
+    android:title="거인의 심장"/>
+
+<item
+    android:id="@+id/collection_item03"
+    android:title="위대한 미술품"/>
+
+<item
+    android:id="@+id/collection_item04"
+    android:title="항해 모험물"/>
+
+<item
+    android:id="@+id/collection_item05"
+    android:title="지성 증가 물약"/>
+
+<item
+    android:id="@+id/collection_item06"
+    android:title="담력 증가 물약"/>
+
+<item
+    android:id="@+id/collection_item07"
+    android:title="매력 증가 물약"/>
+
+<item
+    android:id="@+id/collection_item08"
+    android:title="친절 증가 물약"/>
+</menu>
