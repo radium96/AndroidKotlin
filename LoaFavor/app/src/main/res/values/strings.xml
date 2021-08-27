@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">LoaFavor</string>
+
+    <string name="menu_arthemis">아르테미스 / 트리시온</string>
+    <string name="menu_eudia">유디아 / 루테란 서부</string>
+    <string name="menu_luteran">루테란 동부</string>
+    <string name="menu_tortoyk">토토이크</string>
+    <string name="menu_enihc">애니츠</string>
+    <string name="menu_arthetine">아르데타인</string>
+    <string name="menu_bern_north">베른 북부</string>
+    <string name="menu_shushire">슈샤이어</string>
+    <string name="menu_rohendel">로헨델</string>
+    <string name="menu_yorn">욘</string>
+    <string name="menu_faten">페이튼</string>
+    <string name="menu_papunika_1">파푸니카 1</string>
+    <string name="menu_papunika_2">파푸니카 2</string>
+    <string name="menu_bern_south">베른 남부</string>
+    <string name="menu_guinea">기에나의 바다</string>
+    <string name="menu_procyon">프로키온의 바다</string>
+    <string name="menu_islandheart">섬의 마음</string>
+    <string name="menu_giantheart">거인의 심장</string>
+    <string name="menu_artwork">위대한 미술품</string>
+    <string name="menu_treasuremap">항해 모험물</string>
+    <string name="menu_int_potion">지성 증가 물약</string>
+    <string name="menu_cour_potion">담력 증가 물약</string>
+    <string name="menu_charm_potion">매력 증가 물약</string>
+    <string name="menu_kind_potion">친절 증가 물약</string>
+
 </resources>

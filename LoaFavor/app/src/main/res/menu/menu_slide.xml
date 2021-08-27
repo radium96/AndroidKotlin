@@ -1,99 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools='http://schemas.android.com/tools'
+    tools:showIn="navigation_view">
 
-<item
-    android:id="@+id/world_item01"
-    android:title="아르테미스 / 트리시온"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_arthemis"
+            android:title="@string/menu_arthemis"/>
 
-<item
-    android:id="@+id/world_item02"
-    android:title="유디아 / 루테란 서부"/>
+        <item
+            android:id="@+id/nav_eudia"
+            android:title="@string/menu_eudia"/>
 
-<item
-    android:id="@+id/world_item03"
-    android:title="루테란 동부"/>
+        <item
+            android:id="@+id/nav_luteran"
+            android:title="@string/menu_luteran"/>
 
-<item
-    android:id="@+id/world_item04"
-    android:title="토토이크"/>
+        <item
+            android:id="@+id/nav_tortoyk"
+            android:title="@string/menu_tortoyk"/>
 
-<item
-    android:id="@+id/world_item05"
-    android:title="애니츠"/>
+        <item
+            android:id="@+id/nav_enihc"
+            android:title="@string/menu_enihc"/>
 
-<item
-    android:id="@+id/world_item06"
-    android:title="아르데타인"/>
+        <item
+            android:id="@+id/nav_arthetine"
+            android:title="@string/menu_arthetine"/>
 
-<item
-    android:id="@+id/world_item07"
-    android:title="베른 북부"/>
+        <item
+            android:id="@+id/nav_bern_north"
+            android:title="@string/menu_bern_north"/>
 
-<item
-    android:id="@+id/world_item08"
-    android:title="슈샤이어"/>
+        <item
+            android:id="@+id/nav_shushire"
+            android:title="@string/menu_shushire"/>
 
-<item
-    android:id="@+id/world_item09"
-    android:title="로헨델"/>
+        <item
+            android:id="@+id/nav_rohendel"
+            android:title="@string/menu_rohendel"/>
 
-<item
-    android:id="@+id/world_item10"
-    android:title="욘"/>
+        <item
+            android:id="@+id/nav_yorn"
+            android:title="@string/menu_yorn"/>
 
-<item
-    android:id="@+id/world_item11"
-    android:title="페이튼"/>
+        <item
+            android:id="@+id/nav_faten"
+            android:title="@string/menu_faten"/>
 
-<item
-    android:id="@+id/world_item12"
-    android:title="파푸니카 니아친구"/>
+        <item
+            android:id="@+id/nav_papunika_1"
+            android:title="@string/menu_papunika_1"/>
 
-<item
-    android:id="@+id/world_item13"
-    android:title="파푸니카 서브캐릭터"/>
+        <item
+            android:id="@+id/nav_papunika_2"
+            android:title="@string/menu_papunika_2"/>
 
-<item
-    android:id="@+id/world_item14"
-    android:title="베른 남부"/>
+        <item
+            android:id="@+id/nav_bern_south"
+            android:title="@string/menu_bern_south"/>
 
-<item
-    android:id="@+id/world_item15"
-    android:title="기에나의 바다"/>
+        <item
+            android:id="@+id/nav_guinea"
+            android:title="@string/menu_guinea"/>
 
-<item
-    android:id="@+id/world_item16"
-    android:title="프로키온의 바다"/>
+        <item
+            android:id="@+id/nav_procyon"
+            android:title="@string/menu_procyon"/>
 
-<item
-    android:id="@+id/collection_item01"
-    android:title="섬의 마음"/>
+        <item
+            android:id="@+id/nav_islandheart"
+            android:title="@string/menu_islandheart"/>
 
-<item
-    android:id="@+id/collection_item02"
-    android:title="거인의 심장"/>
+        <item
+            android:id="@+id/nav_giantheart"
+            android:title="@string/menu_giantheart"/>
 
-<item
-    android:id="@+id/collection_item03"
-    android:title="위대한 미술품"/>
+        <item
+            android:id="@+id/nav_artwork"
+            android:title="@string/menu_artwork"/>
 
-<item
-    android:id="@+id/collection_item04"
-    android:title="항해 모험물"/>
+        <item
+            android:id="@+id/nav_treasuremap"
+            android:title="@string/menu_treasuremap"/>
 
-<item
-    android:id="@+id/collection_item05"
-    android:title="지성 증가 물약"/>
+        <item
+            android:id="@+id/nav_int_potion"
+            android:title="@string/menu_int_potion"/>
 
-<item
-    android:id="@+id/collection_item06"
-    android:title="담력 증가 물약"/>
+        <item
+            android:id="@+id/nav_cour_potion"
+            android:title="@string/menu_cour_potion"/>
 
-<item
-    android:id="@+id/collection_item07"
-    android:title="매력 증가 물약"/>
+        <item
+            android:id="@+id/nav_charm_potion"
+            android:title="@string/menu_charm_potion"/>
 
-<item
-    android:id="@+id/collection_item08"
-    android:title="친절 증가 물약"/>
+        <item
+            android:id="@+id/nav_kind_potion"
+            android:title="@string/menu_kind_potion"/>
+    </group>
+
 </menu>

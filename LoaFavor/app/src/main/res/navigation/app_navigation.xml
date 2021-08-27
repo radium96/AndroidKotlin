@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_arthemis">
+
+    <fragment
+        android:id="@+id/nav_arthemis"
+        android:name="com.naca.loafavor.ui.arthemis.ArthemisFragment"
+        android:label="@string/menu_arthemis"
+        tools:layout="@layout/fragment_arthemis" />
+
+    <fragment
+        android:id="@+id/nav_eudia"
+        android:name="com.naca.loafavor.ui.eudia.EudiaFragment"
+        android:label="@string/menu_eudia"
+        tools:layout="@layout/fragment_eudia" />
+
+    <fragment
+        android:id="@+id/nav_luteran"
+        android:name="com.naca.loafavor.ui.luteran.LuteranFragment"
+        android:label="@string/menu_luteran"
+        tools:layout="@layout/fragment_luteran" />
+
+    <fragment
+        android:id="@+id/nav_tortoyk"
+        android:name="com.naca.loafavor.ui.tortoyk.TortoykFragment"
+        android:label="@string/menu_tortoyk"
+        tools:layout="@layout/fragment_tortoyk" />
+
+    <fragment
+        android:id="@+id/nav_enihc"
+        android:name="com.naca.loafavor.ui.enihc.EnihcFragment"
+        android:label="@string/menu_enihc"
+        tools:layout="@layout/fragment_enihc" />
+
+</navigation>

@@ -1,40 +1,45 @@
 package com.naca.loafavor.ui.view
 
-import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
 import android.view.Menu
-import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.widget.AppCompatEditText
 import androidx.core.view.GravityCompat
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
 import com.naca.loafavor.R
 import com.naca.loafavor.databinding.AppMainBinding
+import kotlinx.android.synthetic.main.app_toolbar.view.*
+import kotlinx.android.synthetic.main.content_main.*
 
 class AppMain : AppCompatActivity() {
 
     private lateinit var binding : AppMainBinding
-    private lateinit var sideList: DrawerLayout
+    private lateinit var drawerLayout : DrawerLayout
+    private lateinit var appBarConfiguration : AppBarConfiguration
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        var toolbar = binding.toolbarAction
-        toolbar.setTitleTextColor(Color.BLACK)
+        binding = DataBindingUtil.setContentView(this, R.layout.app_main)
+        var toolbar = binding.appToolbar
+        setSupportActionBar(toolbar.toolbar_action)
 
-        sideList = binding.drawerLayout
+        drawerLayout = binding.drawerLayout
+        val navView = binding.navView
+        val navController = findNavController(R.id.nav_main_fragment)
 
-        setSupportActionBar(toolbar)
-
-        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-        supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24)
+        appBarConfiguration = AppBarConfiguration(setOf(
+            R.id.nav_arthemis, R.id.nav_eudia, R.id.nav_luteran, R.id.nav_tortoyk, R.id.nav_enihc), drawerLayout)
+        setupActionBarWithNavController(navController, appBarConfiguration)
+        navView.setupWithNavController(navController)
 
     }
 
@@ -47,7 +52,7 @@ class AppMain : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             android.R.id.home -> {
-                sideList.openDrawer(GravityCompat.START)
+                drawerLayout.openDrawer(GravityCompat.START)
                 return true
             }
             R.id.list_collection -> {
@@ -61,10 +66,15 @@ class AppMain : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        if (sideList.isDrawerOpen(GravityCompat.START)) {
-            sideList.closeDrawers()
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawers()
         } else {
             super.onBackPressed()
         }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = findNavController(R.id.nav_main_fragment)
+        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }
