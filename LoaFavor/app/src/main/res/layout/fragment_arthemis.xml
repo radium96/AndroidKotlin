@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.arthemis.ArthemisFragment">
+        tools:context=".ui.fragment.ArthemisFragment">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/arthemis_recy"

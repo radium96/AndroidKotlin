@@ -1,4 +1,4 @@
-package com.naca.loafavor.ui.view
+package com.naca.loafavor.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +15,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.naca.loafavor.R
+import com.naca.loafavor.data.NPCDBHelper
 import com.naca.loafavor.databinding.AppMainBinding
 import kotlinx.android.synthetic.main.app_toolbar.view.*
 import kotlinx.android.synthetic.main.content_main.*

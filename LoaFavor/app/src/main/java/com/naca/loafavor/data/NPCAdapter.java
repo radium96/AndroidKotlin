@@ -1,4 +1,4 @@
-package com.naca.loafavor.ui.adapter;
+package com.naca.loafavor.data;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,14 +8,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.naca.loafavor.BR;
-import com.naca.loafavor.data.NPC;
 import com.naca.loafavor.databinding.NpcElementBinding;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
 
 public class NPCAdapter extends RecyclerView.Adapter<NPCAdapter.BindingViewHolder> {
 
-    private LinkedList<NPC> NPCList;
+    private ArrayList<NPC> NPCList;
 
     public interface OnItemClickListener {
         void onItemClick(View v, int position);
@@ -23,8 +22,12 @@ public class NPCAdapter extends RecyclerView.Adapter<NPCAdapter.BindingViewHolde
 
     public static OnItemClickListener mListener = null;
 
-    public NPCAdapter(LinkedList<NPC> NPCList) {
+    public NPCAdapter(ArrayList<NPC> NPCList) {
         this.NPCList = NPCList;
+    }
+
+    public void setNPCList(ArrayList<NPC> npcList) {
+        this.NPCList = npcList;
     }
 
     @NonNull
@@ -70,6 +73,10 @@ public class NPCAdapter extends RecyclerView.Adapter<NPCAdapter.BindingViewHolde
         public void bind(NPC npc) {
             binding.setVariable(BR.name, npc.getName());
             binding.setVariable(BR.location, npc.getLocation());
+            binding.setVariable(BR.status, npc.getStatus());
+            binding.setVariable(BR.now, Integer.toString(npc.getNowFigure()));
+            binding.setVariable(BR.figure, Integer.toString(npc.getFavorFigure()[npc.getStatus_int()]));
+            binding.setVariable(BR.limit, Integer.toString(npc.getRemain()));
         }
     }
 }

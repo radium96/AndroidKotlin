@@ -7,31 +7,31 @@
 
     <fragment
         android:id="@+id/nav_arthemis"
-        android:name="com.naca.loafavor.ui.arthemis.ArthemisFragment"
+        android:name="com.naca.loafavor.ui.fragment.ArthemisFragment"
         android:label="@string/menu_arthemis"
         tools:layout="@layout/fragment_arthemis" />
 
     <fragment
         android:id="@+id/nav_eudia"
-        android:name="com.naca.loafavor.ui.eudia.EudiaFragment"
+        android:name="com.naca.loafavor.ui.fragment.EudiaFragment"
         android:label="@string/menu_eudia"
         tools:layout="@layout/fragment_eudia" />
 
     <fragment
         android:id="@+id/nav_luteran"
-        android:name="com.naca.loafavor.ui.luteran.LuteranFragment"
+        android:name="com.naca.loafavor.ui.fragment.LuteranFragment"
         android:label="@string/menu_luteran"
         tools:layout="@layout/fragment_luteran" />
 
     <fragment
         android:id="@+id/nav_tortoyk"
-        android:name="com.naca.loafavor.ui.tortoyk.TortoykFragment"
+        android:name="com.naca.loafavor.ui.fragment.TortoykFragment"
         android:label="@string/menu_tortoyk"
         tools:layout="@layout/fragment_tortoyk" />
 
     <fragment
         android:id="@+id/nav_enihc"
-        android:name="com.naca.loafavor.ui.enihc.EnihcFragment"
+        android:name="com.naca.loafavor.ui.fragment.EnihcFragment"
         android:label="@string/menu_enihc"
         tools:layout="@layout/fragment_enihc" />
 
