@@ -101,6 +101,10 @@ public class NPCDBHelper extends SQLiteOpenHelper {
                 int rank = cursor.getInt(cursor.getColumnIndex("COLUMN_RANK"));
                 int status = cursor.getInt(cursor.getColumnIndex("COLUMN_STATUS"));
                 int now = cursor.getInt(cursor.getColumnIndex("COLUMN_NOW"));
+                int song1 = cursor.getInt(cursor.getColumnIndex("SONG_1"));
+                int song2 = cursor.getInt(cursor.getColumnIndex("SONG_2"));
+                int expression1 = cursor.getInt(cursor.getColumnIndex("EXPRESSION_1"));
+                int expression2 = cursor.getInt(cursor.getColumnIndex("EXPRESSION_2"));
 
                 NPC temp_npc = new NPC(id, name, location, rank, status, now);
                 npcList.add(temp_npc);

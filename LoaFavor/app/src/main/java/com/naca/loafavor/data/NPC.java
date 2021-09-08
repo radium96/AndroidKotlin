@@ -1,10 +1,5 @@
 package com.naca.loafavor.data;
 
-import android.util.Log;
-
-import androidx.room.Entity;
-import androidx.room.PrimaryKey;
-
 public class NPC {
 
     private int id;

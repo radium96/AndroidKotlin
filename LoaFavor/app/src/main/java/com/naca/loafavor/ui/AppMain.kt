@@ -31,7 +31,7 @@ class AppMain : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         binding = DataBindingUtil.setContentView(this, R.layout.app_main)
         var toolbar = binding.appToolbar
-        setSupportActionBar(toolbar.toolbar_action)
+        setSupportActionBar(toolbar.toolbarAction)
 
         drawerLayout = binding.drawerLayout
         val navView = binding.navView

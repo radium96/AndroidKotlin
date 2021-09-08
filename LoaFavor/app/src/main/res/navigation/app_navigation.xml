@@ -35,4 +35,10 @@
         android:label="@string/menu_enihc"
         tools:layout="@layout/fragment_enihc" />
 
+    <fragment
+        android:id="@+id/nav_arthetine"
+        android:name="com.naca.loafavor.ui.fragment.ArthetineFragment"
+        android:label="@string/menu_arthetine"
+        tools:layout="@layout/fragment_arthetine" />
+
 </navigation>
